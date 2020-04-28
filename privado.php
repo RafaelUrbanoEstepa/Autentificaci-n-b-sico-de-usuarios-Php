@@ -1,3 +1,11 @@
+
+<?php
+session_start();
+if($_SESSION["perfil"]="anonimo"){
+    header("Location: index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
