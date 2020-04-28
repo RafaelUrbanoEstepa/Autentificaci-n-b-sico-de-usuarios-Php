@@ -1,7 +1,7 @@
 
 <?php
 session_start();
-if($_SESSION["perfil"]="anonimo"){
+if(isset($_SESSION["perfil"]) && $_SESSION["perfil"]!="registrado"){
     header("Location: index.php");
 }
 ?>

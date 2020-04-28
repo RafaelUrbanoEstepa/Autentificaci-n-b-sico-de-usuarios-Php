@@ -2,7 +2,7 @@
 session_start();
 
 include "./includes/funciones.php";
-
+header('Content-Type: text/html; charset=utf-8');
 if (!isset($_SESSION["perfil"])){
     $_SESSION["perfil"]="anonimo";
 }
